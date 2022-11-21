@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+.home{
+  font-family: 'Caveat', cursive;
+
+  .header {
+    background: #2F3061;
+  color: #F7FFF7;
+  h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+  }
+  h1 {
+    font-size: 100px;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 45px;
+  }
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+    }
+  }
+
+}
