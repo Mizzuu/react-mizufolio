@@ -8,8 +8,10 @@ const App = () => {
     return (
         <div className="home">
             <div className="header">
-                <h1>Mizuho Tohma</h1>
-                <h2>Front-end Developer</h2>
+                <div className="text item">
+                    <h1>Mizuho Tohma</h1>
+                    <h2>Front-end Developer</h2>
+                </div>
                 {/* <p>
                     When I finished one of my team projects, our instructor told
                     us that our app would be used by kids for an education
@@ -25,8 +27,8 @@ const App = () => {
                     communication skills to build a good teamwork. I am very
                     sure I utilize this skills as a developer.
                 </p> */}
-                <div className="imgHolder">
-                    <img src={ProfileImg} alt="profile image" />
+                <div className="imgHolder item">
+                    <img src={ProfileImg} alt="profile" />
                 </div>
             </div>
 
@@ -121,7 +123,7 @@ const App = () => {
 
                     <section>
                         <h3>Langara College - Vancouver, BC</h3>
-                        <p>
+                        <p className="first">
                             Post-Degree Diploma of Web and Mobile App Design and
                             Development, 2021-2022
                         </p>
