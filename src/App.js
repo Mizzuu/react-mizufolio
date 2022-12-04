@@ -12,21 +12,6 @@ const App = () => {
                     <h1>Mizuho Tohma</h1>
                     <h2>Front-end Developer</h2>
                 </div>
-                {/* <p>
-                    When I finished one of my team projects, our instructor told
-                    us that our app would be used by kids for an education
-                    purpose. This really touched me because I realized tech can
-                    help people dynamically. Once you crate an app, it could
-                    benefit anyone in this world.
-                </p>
-                <p>
-                    I have a three year flight attendant experience which is 180
-                    degrees different from a developer. Thanks to the very
-                    unique environment that I was working with different
-                    colleagues and passengers every day, I earned great
-                    communication skills to build a good teamwork. I am very
-                    sure I utilize this skills as a developer.
-                </p> */}
                 <div className="imgHolder item">
                     <img src={ProfileImg} alt="profile" />
                 </div>
@@ -37,13 +22,20 @@ const App = () => {
                     <h2>Projects</h2>
 
                     <section className="project-item">
-                        <img src={Courte} alt="course thumbnail" />
-                        <h3>Courte</h3>
-                        <p>
-                            Courte is a mobile application which facilitates the
-                            use and sharing of public Tennis courts with our
-                            three primary features, Explore, Play and Match.
-                        </p>
+                        <img
+                            className="project-img"
+                            src={Courte}
+                            alt="course thumbnail"
+                        />
+                        <div classsName="description">
+                            <h3 className="title">Courte</h3>
+                            <p className="para">
+                                Courte is a mobile application which facilitates
+                                the use and sharing of public Tennis courts with
+                                our three primary features, Explore, Play and
+                                Match.
+                            </p>
+                        </div>
 
                         <div className="skills">
                             <div className="skill">React Native</div>
@@ -54,9 +46,13 @@ const App = () => {
                     </section>
 
                     <section className="project-item">
-                        <img src={Picbeak} alt="course thumbnail" />
-                        <h3>Picbeak</h3>
-                        <p>
+                        <img
+                            className="project-img"
+                            src={Picbeak}
+                            alt="course thumbnail"
+                        />
+                        <h3 className="title">Picbeak</h3>
+                        <p className="para">
                             Picbeak is an application which provides you with
                             dynamic and interactive bird information.This app
                             provides interactive bird database focused on
@@ -73,9 +69,13 @@ const App = () => {
                     </section>
 
                     <section className="project-item">
-                        <img src={Scave} alt="course thumbnail" />
-                        <h3>Scave</h3>
-                        <p>
+                        <img
+                            className="project-img"
+                            src={Scave}
+                            alt="course thumbnail"
+                        />
+                        <h3 className="title">Scave</h3>
+                        <p className="para">
                             Scave is a PWA that utilizes geolocation API to
                             donate and locate disposed items in your community.
                         </p>
@@ -96,7 +96,7 @@ const App = () => {
 
             <section class="skills-set item-details">
                 <div class="content-wrap divider">
-                    <h2>Skills Set</h2>
+                    <h2>Skill Set</h2>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -165,6 +165,9 @@ const App = () => {
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div className="copyright">
+                    <p>🦦 Mizuho Tohma 2022 🦦 </p>
                 </div>
             </div>
         </div>
