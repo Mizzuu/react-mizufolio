@@ -150,6 +150,25 @@
       margin: 0;
       font-family: 'Caveat', cursive;
       font-size: 20px;
+      .otter {
+        position: relative;
+        animation-name: otter;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes otter {
+        // 0%   { left:0px; top:0px; }
+        // 25%   { left:-100px; top:-5px; }
+        // 50%  { left:-200px; top:5px; }
+        // 75%   { left:-100px; top:-5px; }
+        // 100% { left:0px; top:0px;}
+
+        0%   { top:0px; }
+        25%   {  top:-5px; }
+        50%  {  top:5px; }
+        75%   {  top:-5px; }
+        100% {  top:0px;}
+      }
     }
   }
   }
