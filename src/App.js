@@ -4,6 +4,12 @@ import Courte from "./img/courte.png";
 import Picbeak from "./img/picbeak.png";
 import Scave from "./img/scave.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons/faSquareGithub";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
+import { faPhone } from "@fortawesome/free-solid-svg-icons/faPhone";
+
 const App = () => {
     return (
         <div className="home">
@@ -141,27 +147,40 @@ const App = () => {
                     <h2>Let's Keep in Touch!</h2>
 
                     <ul className="contact-list">
-                        <li>
+                        <li className="top email">
                             <a href="mailto:mizuho.tohma72@gmail.com">
+                                <FontAwesomeIcon icon={faEnvelope} />
                                 mizuho.tohma72@gmail.com
                             </a>
                         </li>
-                        <li>
+                        <li className="top phone">
+                            <a href="tel:6044184955">
+                                <FontAwesomeIcon icon={faPhone} />
+                                (604)-418-4955
+                            </a>
+                        </li>
+                        <li className="btm linkedin">
                             <a
                                 href="https://www.linkedin.com/in/mizuhotohma/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                LinkedIn
+                                <FontAwesomeIcon
+                                    className="icon"
+                                    icon={faLinkedin}
+                                />
                             </a>
                         </li>
-                        <li>
+                        <li className="btm github">
                             <a
                                 href="https://github.com/Mizzuu"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                GitHub
+                                <FontAwesomeIcon
+                                    className="icon"
+                                    icon={faSquareGithub}
+                                />
                             </a>
                         </li>
                     </ul>
