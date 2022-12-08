@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "./",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
@@ -20,6 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "shagawa": "react-scripts build",
     "build": "cross-env PUBLIC_URL=/react-mizufolio react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
